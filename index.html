@@ -3,22 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio site</title>
+    <title>Hojungs Archive</title>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script>
+      LottieInteractivity.create({
+        player: '#lottie-2',
+        mode: 'cursor',
+        actions: [
+          {
+            type: 'click',
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+    <link rel="icon" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">sidebar</div>
-      <nav class="navigation">
-        <div class="nav_text">About Me</div>
-        <div class="nav_text">Work</div>
-        <div class="nav_text">Get In Touch</div>
-      </nav>
+      <div class="header">
+        <nav class="title">
+          <h1 class="fix_text">Archive</h1>
+        </nav>
+        <div class="section sec_inner">
+          <ol class="fixed--sidebar button">
+            <button id="btn1" class="btn">
+              <a href="#poster">Poster</a>
+            </button>
+            <button id="btn2" class="btn">
+              <a href="#leaflet">Leaflet</a>
+            </button>
+            <button id="btn3" class="btn">
+              <a href="#book">Book</a>
+            </button>
+            <button id="btn4" class="btn">
+              <a href="#video">Video</a>
+            </button>
+            <button id="btn5" class="btn">
+              <a href="#etc">Etc</a>
+            </button>
+          </ol>
+          <div class="inner">
+            <div class="gra">
+              <div>
+                <div class="aboutme">
+                  <dotlottie-player
+                    id="lottie-1"
+                    class="lottie"
+                    src="./assets/Animation - 1718679373433.json"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  <h3>Name</h3>
+                  <h3>Introduce</h3>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <h2>My Work</h2>
+              <div
+                style="
+                  background-image: url(./assets/left.png);
+                  background-repeat: no-repeat;
+                "
+                id="poster"
+                class="section sec_poster"
+              >
+                <div id="#work-1" class="poster">
+                  <h3>Poster</h3>
+                  <img class="cal1" src="./assets/DecCal_mockup.webp" alt="" />
 
-      <div class="aboutme"></div>
-      <div class="work"></div>
-      <div class="touch"></div>
-      <div class="footer"></div>
+                  <img
+                    class="cal2"
+                    src="./assets/vertical-bent-paper-mockup-front-v2.png"
+                  />
+
+                  <div
+                    id="#work-1"
+                    class="poster"
+                    style="
+                      background-image: url(./assets/sssss.png);
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <img
+                      class="cal3"
+                      src="./assets/vertical-bent-paper-mockup-top-v1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="leaflet" class="section sec_lef">
+                <div
+                  style="
+                    background-image: url(./assets/small.png);
+                    background-repeat: no-repeat;
+                  "
+                  id="#work-2"
+                  class="leaflet"
+                >
+                  <h3>Leaflet</h3>
+                  <img
+                    class="leaf leaf1"
+                    src="./assets/Free_4xSquare_Leaflet_Mockup_3.webp"
+                    alt=""
+                  />
+                  <img
+                    class="leaf leaf2"
+                    src="./assets/Free_4xSquare_Leaflet_Mockup_5.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                style="
+                  background-image: url(./assets/sssss.png);
+                  background-repeat: no-repeat;
+                "
+                id="book"
+                class="section sec_book"
+              >
+                <div id="#work-3" class="book">
+                  <h3>Book</h3>
+                  <div
+                    d="#work-3"
+                    class="book"
+                    style="
+                      background-image: url(./assets/sssss.png);
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <img
+                      class="bk3"
+                      src="./assets/Free_4xSquare_Leaflet_Mockupd.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    id="#work-3"
+                    class="book"
+                    style="
+                      background-image: url(./assets/leftsmall.png);
+                      background-repeat: no-repeat;
+                    "
+                  >
+                    <img
+                      class="bk2"
+                      src="./assets/Perfect_Binding_Brochure_Mockup_5.webp"
+                      alt=""
+                    />
+                  </div>
+                  <img
+                    class="bk1"
+                    src="./assets/Perfect_Binding_Brochure_Mockup_1.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="video" class="section sec_vid">
+                <div
+                  style="
+                    background-image: url(./assets/sssss.png);
+                    background-repeat: no-repeat;
+                  "
+                  id="#work-4"
+                  class="video"
+                >
+                  <h3>video</h3>
+                  <video
+                    class="vd"
+                    src="./assets/finalvideo.mp4"
+                    controls
+                    poster="./assets/vd.png"
+                  ></video>
+                  <video
+                    class="vd"
+                    src="./assets/A_Journey.mp4"
+                    controls
+                    poster="./assets/journey.png"
+                  ></video>
+                </div>
+              </div>
+              <div id="etc" class="section sec_e">
+                <div
+                  style="
+                    background-image: url(./assets/small.png);
+                    background-repeat: no-repeat;
+                  "
+                  div
+                  id="#work-5"
+                  class="etc"
+                >
+                  <h3>Etc</h3>
+                  <img
+                    class="etc1"
+                    src="./assets/Business-Cards-Mockup.webp"
+                    alt=""
+                  />
+                  <img class="etc2" src="./assets/tttt.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section sec_touch">
+            <div class="touch">
+              <div>
+                <h2>Get In Touch</h2>
+                <a href="">Instagram</a>
+              </div>
+            </div>
+          </div>
+          <div class="section sec_footer">
+            <div class="footer">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

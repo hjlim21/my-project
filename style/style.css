@@ -1,26 +1,206 @@
-*,
-*::before,
-*::after {
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css';
+* {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 body {
   margin: 0;
-  line-height: 150%;
+  font-family: pretendard;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #202020;
   background-color: #f0f0f0;
 }
 
+a {
+  font-family: pretendard;
+  font-size: 1.125rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+style {
+  background-repeat: no-repeat;
+}
+
+.lottie {
+  display: block;
+  width: 30%;
+  aspect-ratio: 300/300;
+  margin-inline: auto;
+}
+
 .container {
-  background-color: lightgreen;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0;
+  font-weight: 500;
+}
+
+.aboutme {
+  padding: 1.25rem;
+  padding-top: 3.125rem;
+}
+
+.fixed--sidebar {
+  position: fixed;
+  right: 0.9375rem;
+  bottom: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.btn {
+  padding-block: 0.625rem;
+  padding-inline: 0.9375rem;
+  color: #fff;
+  background-color: black;
+  border-radius: 3.125rem;
+}
+
+.btn:hover {
+  background-color: forestgreen;
+  transition: 0.7s;
 }
 
 .navigation {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: rgb(32, 32, 32);
+}
+
+.fix_text {
+  position: fixed;
+  margin: 20px;
+  font-size: 2.5rem;
+  color: #202020;
+}
+
+.work {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 3.125rem;
-  font-size: 1.5rem;
-  font-weight: 21.875rem;
-  text-align: left;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin-bottom: 0.625rem;
+  border-top: forestgreen solid 0.1875rem;
+}
+
+.aboutme h1,
+.work h2 {
+  margin-bottom: 10px;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.875rem;
+  overflow: hidden;
+}
+
+.cal1 {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cal2 {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.leaflet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.875rem;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.875rem;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.etc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gra {
+  width: 100%;
+  background-image: linear-gradient(180deg, #72ff8e, #f0f0f0);
+}
+
+img {
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  width: 70%;
+  height: 70%;
+  margin-bottom: 1.875rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: forestgreen solid 0.1875rem;
+}
+
+.footer {
+  background-color: #99ce96;
 }
