@@ -12,6 +12,11 @@ h1 {
   font-weight: 900;
 }
 
+h3 {
+  font-size: x-large;
+  font-weight: 700;
+}
+
 body {
   margin: 0;
   font-family: pretendard;
@@ -26,6 +31,19 @@ a {
   font-size: 1.125rem;
   color: #fff;
   text-decoration: none;
+}
+
+.hi {
+  padding: 0;
+  margin-bottom: 0.1875rem;
+  font-family: pretendard;
+  font-size: 3.125rem;
+}
+
+.hi_d {
+  margin-top: 3.125rem;
+  margin-bottom: 0;
+  font-weight: 300;
 }
 
 .lottie {
@@ -130,6 +148,10 @@ a {
   color: #202020;
 }
 
+.work_in {
+  font-weight: 400;
+}
+
 .work {
   display: flex;
   flex-direction: column;
@@ -232,7 +254,10 @@ video {
   border-bottom: forestgreen solid 0.1875rem;
 }
 
-.sec_vid {
+.touch {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer {
