@@ -113,14 +113,14 @@ a {
   width: 50%;
   height: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .cal2 {
   width: 50%;
   height: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .leaflet {
@@ -132,7 +132,7 @@ a {
   margin-bottom: 1.875rem;
   overflow: hidden;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .book {
@@ -144,7 +144,7 @@ a {
   margin-bottom: 1.875rem;
   overflow: hidden;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .etc {
@@ -155,7 +155,7 @@ a {
   height: 100%;
   overflow: hidden;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .gra {
@@ -168,7 +168,7 @@ img {
   width: 50%;
   height: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: all 0.2s linear;
 }
 
@@ -187,7 +187,7 @@ video {
   height: 70%;
   margin-bottom: 1.875rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .section {
