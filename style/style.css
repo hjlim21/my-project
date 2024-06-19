@@ -31,6 +31,9 @@ a {
   color: #fff;
   text-decoration: none;
 }
+a :hover {
+  text-decoration: underline;
+}
 
 .hi {
   padding: 0;
@@ -115,6 +118,7 @@ a {
   position: fixed;
   right: 0.9375rem;
   bottom: 0.9375rem;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
@@ -142,8 +146,10 @@ a {
 
 .fix_text {
   position: fixed;
-  margin: 20px;
-  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-left: 1.25rem;
+  font-size: 3.125rem;
+  font-weight: 900;
   color: #202020;
 }
 
@@ -155,13 +161,19 @@ a {
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
-  margin-bottom: 0.625rem;
+  padding-bottom: 0;
   border-top: forestgreen solid 0.1875rem;
 }
 
 .aboutme h1,
 .work h2 {
   margin-bottom: 10px;
+}
+
+.click {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 300;
 }
 
 .poster {
@@ -260,12 +272,26 @@ video {
   border-bottom: forestgreen solid 0.1875rem;
 }
 
-.touch {
-  display: flex;
-  justify-content: center;
+.footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
   text-align: center;
+  background-color: #99ce96;
 }
 
-.footer {
-  background-color: #99ce96;
+.touch_thx {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.touch_tit {
+  font-size: 1.5625rem;
+}
+
+.touch_inner {
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  font-size: 1.25rem;
 }
