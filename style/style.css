@@ -154,7 +154,9 @@ a :hover {
 }
 
 .work_in {
-  font-weight: 400;
+  margin-bottom: 0.625rem;
+  font-size: 1.875rem;
+  font-weight: 600;
 }
 
 .work {
@@ -278,10 +280,11 @@ video {
   width: 100%;
   margin: 0;
   text-align: center;
-  background-color: #99ce96;
+  background-image: linear-gradient(0deg, #72ff8e, #f0f0f0);
 }
 
 .touch_thx {
+  margin-top: 6.25rem;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -292,6 +295,6 @@ video {
 
 .touch_inner {
   margin-top: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 6.25rem;
   font-size: 1.25rem;
 }
