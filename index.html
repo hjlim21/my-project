@@ -1,282 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hojungs Archive</title>
-    <script
-      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-      type="module"
-    ></script>
-    <script>
-      LottieInteractivity.create({
-        player: '#lottie-2',
-        mode: 'cursor',
-        actions: [
-          {
-            type: 'click',
-            forceFlag: false,
-          },
-        ],
-      });
-    </script>
-    <link rel="icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <nav class="title">
-          <div class="fix_text">Archive</div>
-        </nav>
-        <div class="section sec_inner">
-          <ol class="fixed--sidebar button">
-            <button id="btn1" class="btn">
-              <a href="#poster">Poster</a>
-            </button>
-            <button id="btn2" class="btn">
-              <a href="#leaflet">Leaflet</a>
-            </button>
-            <button id="btn3" class="btn">
-              <a href="#book">Book</a>
-            </button>
-            <button id="btn4" class="btn">
-              <a href="#video">Video</a>
-            </button>
-            <button id="btn5" class="btn">
-              <a href="#etc">Etc</a>
-            </button>
-          </ol>
-          <div class="inner">
-            <div class="gra">
-              <div>
-                <div class="aboutme">
-                  <dotlottie-player
-                    id="lottie-1"
-                    class="lottie"
-                    src="./assets/Animation - 1718679373433.json"
-                    background="transparent"
-                    speed="1"
-                    loop
-                    autoplay
-                  ></dotlottie-player>
-                  <h2 class="hi">HI!👋</h2>
-                  <h2 class="hi">My name is Hojung</h2>
-                  <h3 class="hi_d">Welcome to my design archive</h3>
-                </div>
-              </div>
-            </div>
-            <div class="work">
-              <h2 class="work_in">My Work 🡺</h2>
-              <p class="click">click my work!</p>
-              <div
-                style="
-                  background-image: url(./assets/left.png);
-                  background-repeat: no-repeat;
-                "
-                id="poster"
-                class="section sec_poster"
-              >
-                <div id="#work-1" class="poster">
-                  <h3>Poster</h3>
-
-                  <a href="#modal1" class="poster"
-                    ><img class="cal1" src="./assets/DecCal_mockup.webp" alt=""
-                  /></a>
-
-                  <div id="modal1" class="modal">
-                    <div class="modal-content">
-                      <a href="#!" class="close"> &times;</a>
-                      <img src="./assets/clamodal1.webp" alt="" />
-                    </div>
-                  </div>
-
-                  <a href="#modal2" class="poster"
-                    ><img
-                      class="cal2"
-                      src="./assets/vertical-bent-paper-mockup-front-v2.png"
-                  /></a>
-
-                  <div id="modal2" class="modal">
-                    <div class="modal-content">
-                      <a href="#!" class="close">&times;</a>
-                      <img src="./assets/postermodal.webp" alt="" />
-                    </div>
-                  </div>
-
-                  <div
-                    id="#work-1"
-                    class="poster"
-                    style="
-                      background-image: url(./assets/sssss.png);
-                      background-repeat: no-repeat;
-                    "
-                  >
-                    <a href="#modal3" class="poster"
-                      ><img
-                        class="cal3"
-                        src="./assets/vertical-bent-paper-mockup-top-v1.png"
-                        alt=""
-                    /></a>
-                    <div id="modal3" class="modal">
-                      <div class="modal-content">
-                        <a href="#!" class="close">&times;</a>
-                        <img src="./assets/DecCal_mockup copy.webp" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="leaflet" class="section sec_lef">
-                <div
-                  style="
-                    background-image: url(./assets/small.png);
-                    background-repeat: no-repeat;
-                  "
-                  id="#work-2"
-                  class="leaflet"
-                >
-                  <h3>Leaflet</h3>
-
-                  <a href="#modal4" class="leaflet">
-                    <img
-                      class="leaf leaf1"
-                      src="./assets/Free_4xSquare_Leaflet_Mockup_3.webp"
-                      alt=""
-                    />
-                  </a>
-
-                  <div id="modal4" class="modal">
-                    <div class="modal-content">
-                      <a href="#!" class="close">&times;</a>
-                      <img src="./assets/leafletmodal.webp" alt="" />
-                    </div>
-                  </div>
-
-                  <img
-                    class="leaf leaf2"
-                    src="./assets/Free_4xSquare_Leaflet_Mockup_5.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                style="
-                  background-image: url(./assets/sssss.png);
-                  background-repeat: no-repeat;
-                "
-                id="book"
-                class="section sec_book"
-              >
-                <div id="#work-3" class="book">
-                  <h3>Book</h3>
-                  <div
-                    d="#work-3"
-                    class="book"
-                    style="
-                      background-image: url(./assets/sssss.png);
-                      background-repeat: no-repeat;
-                    "
-                  >
-                    <a href="#modal5" class="book">
-                      <img
-                        class="bk3"
-                        src="./assets/Free_4xSquare_Leaflet_Mockupd.webp"
-                        alt=""
-                    /></a>
-
-                    <div id="modal5" class="modal">
-                      <div class="modal-content">
-                        <a href="#!" class="close">&times;</a>
-                        <img src="./assets/bookmodal.webp" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    id="#work-3"
-                    class="book"
-                    style="
-                      background-image: url(./assets/leftsmall.png);
-                      background-repeat: no-repeat;
-                    "
-                  >
-                    <img
-                      class="bk2"
-                      src="./assets/Perfect_Binding_Brochure_Mockup_5.webp"
-                      alt=""
-                    />
-                  </div>
-                  <img
-                    class="bk1"
-                    src="./assets/Perfect_Binding_Brochure_Mockup_1.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div id="video" class="section sec_vid">
-                <div
-                  style="
-                    background-image: url(./assets/sssss.png);
-                    background-repeat: no-repeat;
-                  "
-                  id="#work-4"
-                  class="video"
-                >
-                  <h3>video</h3>
-                  <video
-                    class="vd"
-                    src="./assets/downgradevid.mp4"
-                    controls
-                    poster="./assets/vd.png"
-                  ></video>
-                  <video
-                    class="vd"
-                    src="./assets/downgrade22.mp4"
-                    controls
-                    poster="./assets/journey.png"
-                  ></video>
-                </div>
-              </div>
-              <div id="etc" class="section sec_e">
-                <div
-                  style="
-                    background-image: url(./assets/small.png);
-                    background-repeat: no-repeat;
-                  "
-                  div
-                  id="#work-5"
-                  class="etc"
-                >
-                  <h3>Etc</h3>
-                  <img
-                    class="etc1"
-                    src="./assets/Business-Cards-Mockup.webp"
-                    alt=""
-                  />
-                  <img class="etc2" src="./assets/tttt.webp" alt="" />
-                </div>
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage with Modal and Footer</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <nav class="title">
+        <div class="fix_text">Archive</div>
+      </nav>
+      <div class="section sec_inner">
+        <ol class="fixed--sidebar button">
+          <button id="btn1" class="btn"><a href="#poster">Poster</a></button>
+          <button id="btn2" class="btn"><a href="#leaflet">Leaflet</a></button>
+          <button id="btn3" class="btn"><a href="#book">Book</a></button>
+          <button id="btn4" class="btn"><a href="#video">Video</a></button>
+          <button id="btn5" class="btn"><a href="#etc">Etc</a></button>
+        </ol>
+        <div class="inner">
+          <div class="gra">
+            <div class="aboutme">
+              <dotlottie-player
+                id="lottie-1"
+                class="lottie"
+                src="./assets/Animation - 1718679373433.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></dotlottie-player>
+              <h2 class="hi">HI!👋</h2>
+              <h2 class="hi">My name is Hojung</h2>
+              <h3 class="hi_d">Welcome to my design archive</h3>
             </div>
           </div>
-
-          <div class="footer">
-            <div class="touch">
-              <div>
-                <p class="touch_thx">Thank you 🙇‍♀️</p>
-                <p class="touch_tit">Get in touch</p>
-                <p class="touch_tit">🡇</p>
-                <a
-                  class="touch_inner"
-                  class="insta"
-                  href="https://www.instagram.com/bluemi121/"
-                  >Instagram</a
-                >
-                <p class="touch_inner">dlcoqja6404@naver.com</p>
+          <div class="work">
+            <h2 class="work_in">My Work 🡺</h2>
+            <p class="click">click my work!</p>
+            <div id="poster" class="section sec_poster">
+              <div class="poster">
+                <h3>Poster</h3>
+                <a href="#modal1" class="poster"><img class="cal1" src="./assets/DecCal_mockup.webp" alt=""></a>
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <a href="#!" class="close"> &times;</a>
+                    <img src="./assets/clamodal1.webp" alt="">
+                  </div>
+                </div>
+                <a href="#modal2" class="poster"><img class="cal2" src="./assets/vertical-bent-paper-mockup-front-v2.png" alt=""></a>
+                <div id="modal2" class="modal">
+                  <div class="modal-content">
+                    <a href="#!" class="close">&times;</a>
+                    <img src="./assets/postermodal.webp" alt="">
+                  </div>
+                </div>
+                <a href="#modal3" class="poster"><img class="cal3" src="./assets/vertical-bent-paper-mockup-top-v1.png" alt=""></a>
+                <div id="modal3" class="modal">
+                  <div class="modal-content">
+                    <a href="#!" class="close">&times;</a>
+                    <img src="./assets/DecCal_mockup copy.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="leaflet" class="section sec_lef">
+              <div class="leaflet">
+                <h3>Leaflet</h3>
+                <a href="#modal4" class="leaflet"><img class="leaf leaf1" src="./assets/Free_4xSquare_Leaflet_Mockup_3.webp" alt=""></a>
+                <div id="modal4" class="modal">
+                  <div class="modal-content">
+                    <a href="#!" class="close">&times;</a>
+                    <img src="./assets/leafletmodal.webp" alt="">
+                  </div>
+                </div>
+                <img class="leaf leaf2" src="./assets/Free_4xSquare_Leaflet_Mockup_5.webp" alt="">
+              </div>
+            </div>
+            <div id="book" class="section sec_book">
+              <div class="book">
+                <h3>Book</h3>
+                <a href="#modal5" class="book"><img class="bk3" src="./assets/Free_4xSquare_Leaflet_Mockupd.webp" alt=""></a>
+                <div id="modal5" class="modal">
+                  <div class="modal-content">
+                    <a href="#!" class="close">&times;</a>
+                    <img src="./assets/bookmodal.webp" alt="">
+                  </div>
+                </div>
+                <img class="bk2" src="./assets/Perfect_Binding_Brochure_Mockup_5.webp" alt="">
+                <img class="bk1" src="./assets/Perfect_Binding_Brochure_Mockup_1.webp" alt="">
+              </div>
+            </div>
+            <div id="video" class="section sec_vid">
+              <div class="video">
+                <h3>video</h3>
+                <video class="vd" src="./assets/downgradevid.mp4" controls poster="./assets/vd.png"></video>
+                <video class="vd" src="./assets/downgrade22.mp4" controls poster="./assets/journey.png"></video>
+              </div>
+            </div>
+            <div id="etc" class="section sec_e">
+              <div class="etc">
+                <h3>Etc</h3>
+                <img class="etc1" src="./assets/Business-Cards-Mockup.webp" alt="">
+                <img class="etc2" src="./assets/tttt.webp" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="touch">
+        <div>
+          <p class="touch_thx">Thank you 🙇‍♀️</p>
+          <p class="touch_tit">Get in touch</p>
+          <p class="touch_tit">🡇</p>
+          <a class="touch_inner" href="https://www.instagram.com/bluemi121/">Instagram</a>
+          <p class="touch_inner">dlcoqja6404@naver.com</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+
